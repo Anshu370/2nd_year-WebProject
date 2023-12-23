@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalouge</title>
+    <link rel="stylesheet" href="../CSS/catalouge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th class="head">Book</th>
+            <th class="head">Details</th>
+            <th class="head">Price</th>
+            <th class="head">Add to cart</th>
+        </tr>
+        <tr id='1'>
+            <td><img src="../images/1.png"></td>
+            <td >Book:<span id="desc1"> Computer Science</span> <br><span> Aurthor: </span><br> <span>
+                    Publication:Oxford</span>
+            </td>
+            <td>300 Rs</td>
+            <td><Button onclick="addTocart('Computer Science', 1, 300)"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</Button></td>
+        </tr>
+        <tr id='2'>
+            <td><img src="../images/2.png"></td>
+            <td >Book:<span id="desc2"> SQL third edition</span> <br><span> Aurthor:</span> <br> <span>
+                    Publication:</span> </td>
+            <td>500 Rs</td>
+            <td><Button onclick="addTocart('SQL third edition', 1, 500)"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</Button></td>
+        </tr>
+        <tr id='3'>
+            <td><img src="../images/3.png"></td>
+            <td >Book:<span id="desc3"> C++ </span><br><span> Aurthor: </span> <br> <span> Publication:</span> </td>
+            <td>600 Rs</td>
+            <td><Button onclick="addTocart('C++', 1, 600)"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</Button></td>
+        </tr>
+        <tr id='4'>
+            <td><img src="../images/4.png"></td>
+            <td >Book:<span id="desc4"> Electronic Circuits I </span><br><span> Aurthor: </span> <br> <span> Publication:
+                </span>
+            </td>
+            <td>400 Rs</td>
+            <td><Button onclick="addTocart('Electronic Circuits I', 1, 400)"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</Button></td>
+        </tr>
+        <tr id='5'>
+            <td><img src="../images/5.png"></td>
+            <td >Book:<span id="desc5"> Electronic Devices and Circuits</span> <br><span> Aurthor:</span> <br> <span>
+                    Publication:</span> </td>
+            <td>500 Rs</td>
+            <td><Button onclick="addTocart('Electronic Devices and Circuits', 1, 500)"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</Button></td>
+        </tr>
+    </table>
+    <script src="../js/catalouge.js"></script>
+</body>
+
+</html>

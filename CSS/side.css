@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 99%;
+    height: 100vh;
+    border-right: 2px solid black;
+}
+
+.side_nav {
+    padding: 15px 10px;
+}
+
+.side_nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.side_nav:hover{
+    background-color: aliceblue;
+}
