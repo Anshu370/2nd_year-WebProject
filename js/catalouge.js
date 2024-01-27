@@ -9,6 +9,7 @@ function addTocart(name, quantity, amount) {
         }
     }
     arr.push(desc)
+    console.log(arr)
 }
 
 console.log(arr)
