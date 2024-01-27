@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="../CSS/registration.css">
+    <!-- <script>
+
+function validate() {
+
+// if(n.length < 6){
+//     console.log(n)
+//     alert("name should not be less than 6 charectors")
+// }
+const n = document.getElementById('name').value;
+
+
+console.log(n)
+
+}
+    </script> -->
 </head>
 <body>
 
     <div class="main">
-        <form name="myfrom" method="post">
+        <form name="myfrom">
             <div><h1 class="heading">Registration From</h1></div>
             <div class="fields">
                 <div class="labels">
                     Name
                 </div>
                 <div class="ans">
-                    <input type="text">
+                    <input id="name" type="text" name="reg_name" required>
                 </div>
             </div>
 
@@ -25,7 +40,7 @@
                     Email
                 </div>
                 <div class="ans">
-                    <input type="email">
+                    <input id="email" type="email">
                 </div>
             </div>
 
@@ -34,7 +49,7 @@
                     Password
                 </div>
                 <div class="ans">
-                    <input type="password">
+                    <input id="pass" type="password">
                 </div>
             </div>
 
@@ -52,7 +67,7 @@
                     Phone No
                 </div>
                 <div class="ans">
-                    <input type="number">
+                    <input id="ph_no" type="number">
                 </div>
             </div>
 
@@ -98,10 +113,11 @@
             </div>
 
             <div class="fields">
-                <button>Submit</button>
+                <button type="submit" onclick="validate()">Submit</button>
             </div>
 
         </form>
     </div>
+    <script src="../js/register.js"></script>
 </body>
 </html>
